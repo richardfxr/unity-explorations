@@ -64,6 +64,11 @@ public static class Easing {
         }
     }
 
+    // Failed implementation of a cubic bezier curve
+    // Bezier curves are parametric functions, so you cannot simply calculate a numeric output based on time
+    // The x and y values need to be calculated separately before an output can be produced
+    // Maxime Heckel has a beautiful article on cubic bezier curves:
+    // https://blog.maximeheckel.com/posts/cubic-bezier-from-math-to-motion/
     public static float CubicBezier(Vector2 point1, Vector2 point2, float duration, float time, float start, float end) {
         Vector2 point0 = new Vector2(0 ,0);
         Vector2 point3 = new Vector2(1, 1);
