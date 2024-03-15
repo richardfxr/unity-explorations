@@ -75,7 +75,7 @@ MonoBehaviour:
     m_Value: 1
   limitMin:
     m_OverrideState: 1
-    m_Value: 9
+    m_Value: 12.8
   limitMax:
     m_OverrideState: 1
     m_Value: 15
