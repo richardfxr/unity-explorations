@@ -17,7 +17,7 @@ MonoBehaviour:
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
       data1: 140666587840333
-      data2: 13763000512783810584
+      data2: 18374686531211198488
     lodBias: 1
     lodBiasMode: 0
     lodBiasQualityLevel: 0
@@ -92,11 +92,60 @@ MonoBehaviour:
   supportRuntimeDebugDisplay: 0
   autoRegisterDiffusionProfiles: 1
   apvScenesData:
-    serializedBounds: []
-    serializedHasVolumes: []
-    serializedProfiles: []
-    serializedBakeSettings: []
-    serializedBakingSets: []
+    serializedBounds:
+    - sceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
+      bounds:
+        m_Center: {x: 0, y: 0, z: -20.25}
+        m_Extent: {x: 40.5, y: 40.5, z: 20.25}
+    serializedHasVolumes:
+    - sceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
+      hasProbeVolumes: 1
+    serializedProfiles:
+    - sceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
+      profile: {fileID: 11400000, guid: 28847c5db2b473e4481fcf0ed776b74c, type: 2}
+    serializedBakeSettings:
+    - sceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
+      settings:
+        m_Version: 1
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
+          collisionMask:
+            serializedVersion: 2
+            m_Bits: 4294967291
+    serializedBakingSets:
+    - name: New Baking Set
+      sceneGUIDs:
+      - 9fc0d4010bbf28b4594072e72b8655ab
+      settings:
+        m_Version: 1
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
+          collisionMask:
+            serializedVersion: 2
+            m_Bits: 4294967291
+      profile: {fileID: 11400000, guid: 28847c5db2b473e4481fcf0ed776b74c, type: 2}
+      lightingScenarios:
+      - Default
     m_LightingScenario: Default
   m_Version: 5
   m_ShaderVariantLogLevel: 0
