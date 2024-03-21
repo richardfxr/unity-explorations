@@ -2088,7 +2088,7 @@ MonoBehaviour:
   cameraOffsetY: -2
   rotateSpeed: 100
   rotateSmoothDampSpeed: 0.4
-  initialRotation: {x: -120, y: 0, z: 0}
+  initialRotation: {x: -120, y: 165, z: 0}
   mouseSensitivity: 5
 --- !u!114 &284693463
 MonoBehaviour:
@@ -4761,7 +4761,7 @@ GameObject:
   - component: {fileID: 705507994}
   - component: {fileID: 705507996}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Main Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6503,7 +6503,7 @@ MonoBehaviour:
   serializedScenarios:
   - scenario: Default
     data:
-      sceneHash: 2003744817
+      sceneHash: 5547671
       cellDataAsset: {fileID: 4900000, guid: 3ddac02d5c5e3cc49a7e35755b60d270, type: 3}
       cellOptionalDataAsset: {fileID: 4900000, guid: 60b6b6f74aaa64142a2dc0ef4d2f1f8e, type: 3}
 --- !u!4 &1037119600
@@ -7199,7 +7199,7 @@ Transform:
   m_GameObject: {fileID: 1241605098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95, y: -1.35, z: -19.05}
+  m_LocalPosition: {x: -1.15, y: 3.5, z: -12.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7248,7 +7248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPivot: {fileID: 284693460}
-  maxVelocity: 4
+  maxVelocity: 5
   forceMultiplier: 1
 --- !u!1001 &1245460421
 PrefabInstance:
