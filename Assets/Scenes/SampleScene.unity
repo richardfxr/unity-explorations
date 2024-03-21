@@ -1879,6 +1879,7 @@ MonoBehaviour:
   rotateSpeed: 100
   rotateSmoothDampSpeed: 0.4
   initialRotation: {x: -120, y: 0, z: 0}
+  mouseSensitivity: 5
 --- !u!114 &284693463
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class CameraMovement : MonoBehaviour {
     public float rotateSpeed;
     public float rotateSmoothDampSpeed;
     public Vector3 initialRotation;
+    public float mouseSensitivity;
 
     private Vector2 _moveVector;
     private float _currentRotateY;
@@ -17,8 +18,12 @@ public class CameraMovement : MonoBehaviour {
     private float _rotateSmoothDampVelocity;
     private float _currentMoveY;
     private float _moveSmoothDampVelocity;
+    private float _mouseRotateY;
 
     void Start() {
+        // make cursor invisible
+        Cursor.visible = false;
+
         // set up initial rotation
         transform.eulerAngles = initialRotation;
         _currentRotateY = initialRotation.y;
@@ -26,12 +31,15 @@ public class CameraMovement : MonoBehaviour {
     }
 
     void Update() {
+        // smoothed keyboard rotate
         _targetRotateY -= _moveVector.x * rotateSpeed * Time.deltaTime;
         _currentRotateY = Mathf.SmoothDamp(_currentRotateY, _targetRotateY, ref _rotateSmoothDampVelocity, rotateSmoothDampSpeed);
+        // mouse rotate
+        _mouseRotateY += Mouse.current.delta.ReadValue().x * mouseSensitivity * Time.smoothDeltaTime;
 
         transform.eulerAngles = new Vector3(
             transform.eulerAngles.x,
-            _currentRotateY,
+            _currentRotateY + _mouseRotateY,
             transform.eulerAngles.z
         );
 
