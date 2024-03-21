@@ -21,8 +21,8 @@ public class CameraMovement : MonoBehaviour {
     private float _mouseRotateY;
 
     void Start() {
-        // make cursor invisible
-        Cursor.visible = false;
+        // lock cursor
+        Cursor.lockState = CursorLockMode.Locked;
 
         // set up initial rotation
         transform.eulerAngles = initialRotation;
